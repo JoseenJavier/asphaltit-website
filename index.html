@@ -1,12 +1,265 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>ASPHALT IT! – Driveway & Paving Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background: url('https://img.freepik.com/fotos-premium/rodillo-carretera-amarillo-que-compacta-asfalto-fresco-carreteras-nueva-construccion-mejorar-su-durabilidad_937679-33694.jpg') center/cover no-repeat;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header::before {
+      content: '';
+      background-color: rgba(0,0,0,0.6);
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      z-index: 0;
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+    header img {
+      max-width: 180px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e10600;
+    }
+    .cta-section {
+      background: url('https://advfink.dk/wp-content/uploads/2021/08/Plan-og-miljoe.jpg') center/cover no-repeat;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      color: #fff;
+    }
+    .cta-section::before {
+      content: '';
+      background-color: rgba(0,0,0,0.6);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+    .cta-section > * {
+      position: relative;
+      z-index: 1;
+    }
+    .cta-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #e10600;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #ff1a1a;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      color: #000;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      justify-content: center;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #e10600;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebc59;
+    }
+    .social-icons {
+      margin-top: 30px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .lang {
+      margin-top: 30px;
+      font-style: italic;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <h1>ASPHALT IT!</h1>
-  <p>This is a placeholder for the final site content.</p>
+
+<header data-aos="fade-down" style="align-items: flex-start; padding-top: 40px; padding-left: 40px;">
+  <div style="width: 100%; display: flex; align-items: center; gap: 40px; padding: 20px 0 10px 40px;">
+  <img src="https://i.postimg.cc/brPVzqTF/20250503-115036.png" alt="ASPHALT IT Logo" style="max-width: 180px;">
+  <h1 style="font-size: 4rem; font-weight: 900; color: #fff; text-shadow: 2px 2px #e10600; margin: 0;">ASPHALT IT!</h1>
+</div>
+  <p style="font-size: 1.7em; font-weight: bold; background-color: rgba(225,6,0,0.85); padding: 12px 25px; border-radius: 8px; display: inline-block; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.5); white-space: nowrap; text-align: center;"><span style="font-size: 21px;">🚧 Driveway & Asphalt Services – We don’t just pave, we perfect! 🚧</span></p>
+</header>
+
+<nav>
+  <a href="#about">ABOUT US</a>
+  <a href="#services">SERVICES</a>
+  <a href="#gallery">PREVIOUS WORKS</a>
+  <a href="#estimate">CONTACT US</a>
+</nav>
+
+
+<section id="about" data-aos="fade-up" style="text-align: center;">
+  <h2 style="font-size: 2.2rem; font-family: Arial, sans-serif;">About Us / Sobre Nosotros</h2>
+  <p>ASPHALT IT! LLC is a family-owned business with over 3 years of experience in residential and commercial asphalt services. We are committed to excellence in every aspect of our business. We uphold a standard of integrity bound by fairness, honesty, and personal responsibility. Our distinction is the quality of service we bring to our customers. Accurate knowledge of our trade combined with ability is what makes us true professionals. Above all, we are watchful of our customers' interests and make their concerns the basis of our business.</p>
+  <p>ASPHALT IT! LLC es una empresa familiar con más de 3 años de experiencia en servicios de asfalto para hogares y negocios. Estamos comprometidos con la excelencia en cada aspecto de nuestro negocio. Mantenemos un estándar de integridad basado en la equidad, la honestidad y la responsabilidad personal. Nuestra distinción es la calidad del servicio que ofrecemos a nuestros clientes. El conocimiento preciso de nuestro oficio, combinado con la habilidad, es lo que nos convierte en verdaderos profesionales. Por encima de todo, velamos por los intereses de nuestros clientes y hacemos de sus preocupaciones la base de nuestro negocio.</p>
+</section>
+
+<section id="services" class="cta-section" data-aos="fade-up">
+  <h2 style="font-size: 2.2rem; font-family: Arial, sans-serif;">Our Services / Nuestros Servicios</h2>
+  <p><span style="font-size: 20px; vertical-align: middle; margin-right: 8px; color: red;">⚠️</span> Driveway Installation / Instalación de Entradas</p>
+  <p><span style="font-size: 20px; vertical-align: middle; margin-right: 8px; color: red;">⚠️</span> Asphalt Repair / Reparación de Asfalto</p>
+  <p><span style="font-size: 20px; vertical-align: middle; margin-right: 8px; color: red;">⚠️</span> Sealcoating / Sellado de Superficie</p>
+  <p><span style="font-size: 20px; vertical-align: middle; margin-right: 8px; color: red;">⚠️</span> Asphalt Maintenance / Mantenimiento de Asfalto</p>
+  <p><span style="font-size: 20px; vertical-align: middle; margin-right: 8px; color: red;">⚠️</span> Concrete / Concreto</p>
+  <p><span style="font-size: 20px; vertical-align: middle; margin-right: 8px; color: red;">⚠️</span> Striping / Señalización Vial</p>
+</section>
+
+
+
+<section id="gallery" data-aos="fade-up" style="text-align:center; padding: 40px 20px;">
+  <h2 style="margin-bottom:30px; font-size: 2.2rem; font-family: Arial, sans-serif;">Previous Works / Trabajos Anteriores</h2>
+  <div class="gallery">
+    <img src="https://i.postimg.cc/KjJYfvp6/20250503-115430.jpg" alt="Before and After 1">
+    <img src="https://i.postimg.cc/kG9c8wLj/20250516-211854.jpg" alt="Before and After 2">
+    <img src="https://i.postimg.cc/j2F49KL1/20250505-151323.jpg" alt="Driveway with caution tape">
+    <img src="https://i.postimg.cc/J0YLtThX/20250505-161717.jpg" alt="New Asphalt with logo">
+    <img src="https://i.postimg.cc/VLF79S97/20250503-121449.jpg" alt="Parking lot project">
+    <img src="https://i.postimg.cc/yYqdhx6S/20250503-115854.jpg" alt="Basketball asphalt driveway">
+  </div>
+</section>
+
+  <div id="estimate" style="background-color: #111; padding: 20px; margin-bottom: 30px; border-radius: 10px; text-align: center;">
+    <h3 style="color: #e10600; font-size: 36px; line-height: 1.4;">🚨 Don’t wait until cracks get worse<br>No esperes a que las grietas empeoren</h3>
+    <p style="font-size: 18px; max-width: 700px; margin: auto;">Let us protect and enhance your asphalt today. Reach out now for a <strong>free, no-pressure estimate</strong>.<br>
+    Deja que protejamos y mejoremos tu asfalto hoy mismo. <strong>¡Cotización gratis y sin compromiso!</strong></p>
+  </div>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 40px; max-width: 1000px; margin: auto;">
+    <div style="flex: 1; min-width: 280px;">
+      <form action="mailto:asphalt.it.fl@gmail.com" method="POST" enctype="text/plain">
+        <input style="font-family: Arial, sans-serif; font-size: 16px;" type="text" name="name" placeholder="Your Name / Su Nombre" required>
+        <input style="font-family: Arial, sans-serif; font-size: 16px;" type="email" name="email" placeholder="Your Email / Su Correo" required>
+        <textarea style="font-family: Arial, sans-serif; font-size: 16px;" name="message" rows="5" placeholder="Your Message / Su Mensaje" required></textarea>
+        <button class="btn" type="submit">Send Message / Enviar Mensaje</button>
+      </form>
+    </div>
+    <div style="flex: 1; min-width: 280px; text-align: center;">
+      <p><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" style="width:18px; vertical-align:middle; margin-right:5px;"> <strong>Email / Correo:</strong> asphalt.it.fl@gmail.com</p>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" alt="Phone Icon" style="width:18px; vertical-align:middle; margin-right:5px;"> <strong>Phone / Teléfono:</strong> (305) 399-0856</p>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location Icon" style="width:18px; vertical-align:middle; margin-right:5px;"> <strong>Address / Dirección:</strong> 7545 E Treasure Drive, North Bay, Florida, 33141</p>
+      <a class="whatsapp-button" href="https://wa.me/13053990856" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">Chat on WhatsApp
+      </a>
+      <div class="social-icons" style="margin-top: 20px;">
+        <a href="https://www.facebook.com/share/1EqL36uPuL/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/asphaltit_fl?igsh=MWt4NGFpNmRzNDl3aw==" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@asphalt.it4?_t=ZP-8xFpXFAHQJb&_r=1" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
+      </div>
+      <div style="margin-top: 30px;">
+        <a href="https://www.angi.com/companylist/us/fl/north-bay-village/asphalt-it-llc-reviews-1.htm" target="_blank">
+          <img src="https://callduraclean.com/wp-content/uploads/2022/10/angi.png" alt="Find us on Angi" style="max-width: 150px;">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+<footer>
+  <p>&copy; 2025 Asphalt It. All rights reserved.</p>
+  <p class="lang">Website available in English & Español</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+
+
+
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <a href="#estimate" class="btn" style="box-shadow: 0 4px 10px rgba(0,0,0,0.4); font-size: 20px; padding: 16px 26px;">Get a Free Estimate</a>
+</div>
+
 </body>
 </html>
